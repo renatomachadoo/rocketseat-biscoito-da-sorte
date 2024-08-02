@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(0.1turn, #190361 0%, #BB00FF 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #34355B;
+}
+
+body, input, button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 0 20rem;
+}
+
+main{
+  background-color: #FFFFFF;
+  border-radius: .5rem;
+  padding: 4.8rem 6.4rem 8.4rem;
+  text-align: center;
+  width: min(42.8rem, 90%);
+  box-shadow: 0 2rem 5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* SCREEN 1 */
+
+.screen1 {
+  width: 30rem;
+}
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+img{
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#imageCookie:hover {
+  animation-name: moveCookie;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes moveCookie {
+  0% {
+    transform: translateX(0%) translateY(0%) ;
+  }
+
+  20% {
+    transform: translateX(10%) translateY(-5%) rotate(10deg);
+  }
+
+  40% {
+    transform: translateX(-20%) translateY(5%) rotate(-10deg);
+  }
+
+  60% {
+    transform: translateX(10%) translateY(-5%) rotate(15deg);
+  }
+
+  80% {
+    transform: translateX(-10%) translateY(5%) rotate(-30deg);
+  }
+
+  100% {
+    transform: translateX(10%) translateY(-5%) rotate(15deg);
+  }
+}
+
+/* SCREEN 2 */
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.7rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.phrase-wrapper{
+  width: 100%;
+  background-color: #E4EDF1;
+  padding: 1rem;
+  box-shadow: .2rem .2rem .2rem #555555;
+  margin-bottom: 6rem;
+}
+
+.phrase-text{
+  font-size: 2.4rem;
+  color: #000000;
+  font-family: "Dancing Script", sans-serif;
+}
+
+button{
+  margin-top: 5.9rem;
+  background-color: #FF9500;
+  color: #FFFFFF;
+  padding: 1.6rem;
+  border: none;
+  border-radius: .4rem;
+}
+
+button:hover{
+  filter: brightness(0.9);
+  cursor: pointer;
+}
